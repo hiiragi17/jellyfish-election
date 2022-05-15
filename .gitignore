@@ -33,3 +33,5 @@
 # Ignore sqlite3 files
 db/jellyfish-election_development
 db/jellyfish-election_test
+
+/public/uploads

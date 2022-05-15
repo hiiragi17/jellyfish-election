@@ -9,8 +9,15 @@ class JellyfishesController < ApplicationController
     end
 
     def create
-        @jellyfish.create(jellyfish_params)
-    end
+        binding.pry
+        @jellyfish = Jellyfish.new(jellyfish_params)
+        if @jellyfish.save
+          redirect_to jellyfishes_path, success: "成功しました"
+        else
+          flash.now['danger'] = "失敗しました"
+          render :new
+        end
+      end
     
     def show ;end
 

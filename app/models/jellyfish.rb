@@ -1,6 +1,6 @@
 class Jellyfish < ApplicationRecord
-    belongs_to :user
+  mount_uploader :jellyfish_image, JellyfishImageUploader
 
-    validates :title, presence: true, length: { maximum: 255 }
-    validates :body, presence: true, length: { maximum: 65_535 }
+  validates :title, presence: true, length: { maximum: 255 }
+  validates :body, presence: true, length: { maximum: 65_535 }
 end
