@@ -9,7 +9,6 @@ class JellyfishesController < ApplicationController
     end
 
     def create
-        binding.pry
         @jellyfish = Jellyfish.new(jellyfish_params)
         if @jellyfish.save
           redirect_to jellyfishes_path, success: "成功しました"

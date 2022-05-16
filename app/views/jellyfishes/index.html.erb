@@ -1,6 +1,9 @@
-<div class='top-wrapper'>
-  <div class='top-inner-text'>
-      <div class="row">
+<div class="bg-light">
+<div class="container pt-5">
+  <div class="row">
+ <div class="col-12">
+ <h1>投票結果</h1>
+ <p>詳しい情報はクラゲの名前をクリックして見てみてください</p>
         <% if @jellyfishes.present? %>
           <%= render @jellyfishes %>
         <% else %>
@@ -8,4 +11,5 @@
         <% end %>
     </div>
   </div>
+</div>
 </div>

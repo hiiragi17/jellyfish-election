@@ -1,16 +1,15 @@
+<div class="bg-light">
 <div class="container pt-5">
   <div class="row mb-3">
-    <div class="col-lg-8 offset-lg-2">
-      <h1><%= "詳細" %></h1>
       <!-- 掲示板内容 -->
-      <article class="card">
+        <h1><%= @jellyfish.title%></h1>
+      <article class="card" style="width: 100rem;">
         <div class="card-body">
           <div class='row'>
             <div class='col-md-3'>
-              <%=image_tag @jellyfish.jellyfish_image.url,class:"card-img-top img-fluid", size: '300✖️200' %>
+              <%=image_tag @jellyfish.jellyfish_image.url, class:"card-img-topp", size: '200✖️200' %>
             </div>
             <div class='col-md-9'>
-              <h3 style='display: inline;'><%= @jellyfish.title%></h3>
               </ul>
             </div>
           </div>
@@ -18,4 +17,5 @@
         </div>
       </article>
     </div>
+  </div>
   </div>
