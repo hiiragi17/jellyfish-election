@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+      <h1><%= "詳細" %></h1>
+      <div class="text-right mb-3">
+        <%= link_to '編集', edit_admin_jellyfish_path(@jellyfish), class: 'btn btn-success' %>
+        <%= link_to '削除', admin_jellyfish_path(@jellyfish), method: :delete, data: { confirm: '削除しますか？'}, class: 'btn btn-danger' %>
+      </div>
+      <table class="table table-bordered bg-white">
+        <tr>
+          <th scope="row"><%= "ID" %></th>
+          <td><%= @jellyfish.id %></td>
+        </tr>
+        <tr>
+          <th scope="row"><%= "タイトル"  %></th>
+          <td><%= @jellyfish.title %></td>
+        </tr>
+        <tr>
+          <th scope="row"><%= "本文"%></th>
+          <td><%=  @jellyfish.body %></td>
+        </tr>
+        <tr>
+          <th scope="row"><%= '作成日時' %></th>
+          <td><%= l @jellyfish.created_at, format: :long %></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>

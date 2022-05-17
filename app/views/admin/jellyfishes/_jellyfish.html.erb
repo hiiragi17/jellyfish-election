@@ -1,0 +1,16 @@
+<tr>
+  <td>
+    <%= jellyfish.id %>
+  </td>
+  <td>
+      <%= link_to jellyfish.title, admin_jellyfish_path(jellyfish) %>
+  </td>
+  <td>
+    <%= l jellyfish.created_at, format: :long %>
+  </td>
+  <td>
+    <%= link_to '詳細', admin_jellyfish_path(jellyfish), class: 'btn btn-info' %>
+    <%= link_to '編集', edit_admin_jellyfish_path(jellyfish), class: 'btn btn-success' %>
+    <%= link_to '削除', admin_jellyfish_path(jellyfish), method: :delete, data: { confirm: "削除しますか"}, class: 'btn btn-danger' %>
+  </td>
+</tr>
