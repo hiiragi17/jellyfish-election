@@ -1,5 +1,7 @@
 {
   "name": "jellyfish-election",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "admin-lte": "^3.1"
+  }
 }
