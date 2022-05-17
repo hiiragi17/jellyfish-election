@@ -1,0 +1,7 @@
+<% if @alreadylike?(jellyfish)  %>
+  <%# 投票していれば、投票しているボタンのとこへ %>
+  <%= render 'unlike', { jellyfish: jellyfish } %>
+<% else %>
+  <%# 投票していなければ、投票していないボタンのとこへ %>
+  <%= render 'like', { jellyfish: jellyfish } %>
+<% end %>
