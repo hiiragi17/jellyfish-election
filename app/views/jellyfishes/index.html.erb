@@ -1,8 +1,15 @@
-<div class="row">
-
-    <div class="col-12">
-  <h1><%= "立候補者" %></h1>
-      <%= render @jellyfishes %>
+<div class="bg-light">
+<div class="container pt-5">
+  <div class="row">
+ <div class="col-12">
+ <h1>立候補者</h1>
+ <p>詳しい情報はクラゲの名前をクリックして見てみてください</p>
+        <% if @jellyfishes.present? %>
+          <%= render @jellyfishes %>
+        <% else %>
+          <p><%= "ありません" %></p>
+        <% end %>
     </div>
   </div>
+</div>
 </div>
