@@ -1,6 +1,9 @@
 class Admin::JellyfishesController < Admin::BaseController
    before_action :set_jellyfish, only: %i[show edit update destroy]
-
+   def new
+    @jellyfish = Jellyfish.new
+   end
+   
    def index
      @jellyfishes = Jellyfish.all
    end
