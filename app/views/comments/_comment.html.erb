@@ -1,0 +1,12 @@
+<tr id="comment-<%= comment.id %>">
+  <td style="width: 60px">
+  </td>
+  <td>
+    <div id="js-comment-<%= comment.id %>">
+      <%= simple_format(comment.body) %>
+    </div>
+    <div id="js-textarea-comment-box-<%= comment.id %>" style="display: none;">
+      <textarea id="js-textarea-comment-<%= comment.id %>" class="form-control mb-1"><%= comment.body %></textarea>
+    </div>
+  </td>
+</tr>
