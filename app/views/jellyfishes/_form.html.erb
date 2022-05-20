@@ -10,7 +10,7 @@
     <div class="form-group">
     <%= f.label :jellyfish_image %>
     <%= f.file_field :jellyfish_image, class: 'form-control mb-3', accept: 'image/*' %>
-    <%= f.hidden_field :jellyfish_image_cache %>
+    
   </div>
   <div class='mt-3 mb-3'>
     <%= image_tag @jellyfish.jellyfish_image.url,
