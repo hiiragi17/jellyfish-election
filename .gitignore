@@ -28,7 +28,6 @@
 
 # Ignore vendor
 /vendor
-/config/database.yml
 
 # Ignore sqlite3 files
 db/jellyfish-election_development
