@@ -66,3 +66,6 @@ gem 'kaminari'
 gem 'ransack'
 gem 'config'
 gem 'enum_help'
+gem 'fog-aws'
+gem "aws-sdk-s3", require: false 
+gem 'dotenv-rails'

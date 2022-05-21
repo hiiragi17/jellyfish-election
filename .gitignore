@@ -34,3 +34,5 @@ db/jellyfish-election_development
 db/jellyfish-election_test
 
 /public/uploads
+
+/.env
