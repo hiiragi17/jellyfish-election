@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   root to: 'top_pages#top'
   get 'references', to: 'references#new'
   resources :users, only: %i[new create]
-  resources :jellyfishes do
+  resources :jellyfishes, only: %i[create index edit update show] do
     resource :like, only: %i[create]
   end
 
