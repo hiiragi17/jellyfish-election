@@ -1,22 +1,17 @@
 <div class="bg-light">
-<div class="container pt-5">
-  <div class="row mb-3">
+  <div class="container pt-5">
+    <div class="row mb-3">
+      <div class="col-md-8 col-md-offset-2">
       <!-- 掲示板内容 -->
         <h1><%= @jellyfish.title%></h1>
-      <article class="card" style="width: 100rem;">
+        <article class="card" style="width: 50rem;">
         <div class="card-body">
-          <div class='row'>
-            <div class='col-md-3'>
-              <%=image_tag @jellyfish.jellyfish_image.url, class:"card-img-topp", size: '200✖️200' %>
-            </div>
-            <div class='col-md-9'>
-              </ul>
-            </div>
-          </div>
-        <p><%= simple_format(@jellyfish.body) %></p>
+          <%=image_tag @jellyfish.jellyfish_image.url, class:"card-img-topp", size: '200✖️200' %>
+           <p><%= simple_format(@jellyfish.body) %></p>
         </div>
-      </article>
-      <%= link_to "←戻る", jellyfishes_path, class: 'navbar-brand naver-light'  %>
+        </article>
+        <%= link_to "←戻る", jellyfishes_path, class: 'navbar-brand naver-light'  %>
+      </div>
     </div>
   </div>
-  </div>
+</div>
